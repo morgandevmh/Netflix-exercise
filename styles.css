@@ -23,11 +23,70 @@ body {
 
 header {
     background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.5%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.725) 53.5%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.5%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6) 97%);
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    z-index: 2;
+    z-index: -1;
+    object-fit: cover;
+
 }
 
 .logo {
     color: rgb(229,9,20);
+    height: 40px;
+}
 
+.top-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding-right: 100px;
+}
+.identifier {
+    position: relative;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+.text {
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    
+}
+
+.text h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    max-width: 700px;
+}
+
+.text p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.text h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 500px;
 }
