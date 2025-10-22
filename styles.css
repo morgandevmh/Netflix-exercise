@@ -5,9 +5,13 @@
     --gradient-1: ;
     --gradient-2: ;
 
-    --font-1: ;
-    --font-2: ; 
+    --font-1:  'Bebas Neue', sans-serif;;
+    --font-2:'Anton', sans-serif; ; 
 }
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -52,9 +56,11 @@ header img {
     gap: 30px;
     padding-right: 100px;
 }
+
 .identifier {
+    height: 18px;
     position: relative;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     min-height: 2rem;
     padding: 0.25rem 1rem;
@@ -62,6 +68,7 @@ header img {
     background: rgb(229,9,20);
     color: rgb(255,255,255);
     text-decoration: none;
+    font-family: var(--font-2);
 }
 
 .text {
@@ -78,16 +85,19 @@ header img {
     font-size: 3.5rem;
     font-weight: 900;
     max-width: 700px;
+    font-family: var(--font-2);
 }
 
 .text p {
     font-size: 1.25rem;
     font-weight: 500;
+    font-family: var(--font-2);
 }
 
 .text h3 {
     font-size: 1rem;
     font-weight: 400;
+    font-family: var(--font-2);
     line-height: 1.5;
     max-width: 500px;
 }
@@ -113,6 +123,8 @@ header img {
     filter: opacity(100%);
     color: inherit;
     background: transparent;
+    border: solid 1px gray;
+    
 }
 
 .button-1 {
@@ -172,34 +184,44 @@ z-index: 2;
     left: 10%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 10px;
+    gap: 0px;
     background: linear-gradient(90deg, #3b2063 0%, #1b1c5a 100%);
-    transition: transform 0.6s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     color: white;
     border-radius: 20px;
+    padding: 25px;
 }
 
 .container-1:hover {
     background: linear-gradient(90deg, #432371 0%, #1c1b54 100%);
-    transform: scale(1.1);
+    transform: scale(1.08);
+
+}
+
+.text-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 
 }
 
 .container-1 h3 {
     position: relative;
-    bottom: 15px ;
+    top: 20px;
     font-size: 1.25rem;
     font-weight: 500;
-    left: 40px;
+    font-family: var(--font-1);
 }
 
 .container-1 p {
     position: relative;
-    top: 8px;
-    right: 330px;
+    bottom: 25px;
     font-size: 1rem;
     font-weight: 400;
+    font-family: var(--font-2);
 }
 .en-savoir-plus-button {
     height: 45px;
@@ -219,3 +241,123 @@ z-index: 2;
 }
 
 
+
+.tendances {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.tendances h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    left: 130px;
+    font-family: var(--font-2);
+} 
+
+.carrousel-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 130px;
+    padding-right: 130px ;
+}
+.card {
+    height: 280px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    height: 280px;
+    width: 180px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 15px;
+  
+}
+
+.carrousel-card span {
+    font-size: 7rem;
+    font-weight: 900;
+    z-index: 5;
+    position: relative;
+    top: 60%;
+    color: rgb(65,65,65);
+   -webkit-text-stroke: 0.15rem rgb(255,255,255);
+   text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+   -webkit-text-fill-color: rgb(0,0,0);
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+
+
+
+.raison-abonnement {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+
+}
+
+.raison-abonnement h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    left: 130px;
+    font-family: var(--color-2);
+}
+
+.container-card-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 130px;
+    padding-right: 130px ;
+
+}
+
+.card2 {
+    display: flex;
+    height: 360px;
+    width: 280px;
+    flex-direction: column;
+    text-align: justify;
+    color: white;
+    background: linear-gradient(180deg, #2b2d4af1 0%, #2f3150f1 30%, #352d4af1 70%, #3a2645f1 100%);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.card2 h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-2);
+}
+
+.card2 p {
+    color: rgba(255,255,255,0.7);
+    font-family: var(--font-2);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+.faq {
+
+}
