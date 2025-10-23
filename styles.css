@@ -73,7 +73,7 @@ header img {
 .select-lang-1 {
     height: auto;
     background-color: #00000004;
-    border: solid 2px white;
+    border: solid 1px gray;
     color: white;
     appearance: none;
     width: 120px;
@@ -427,5 +427,26 @@ z-index: 2;  */
 
 
 .faq {
+    height: 90vh;
+    display: flex;
+    flex-direction:column ;
+    background-color: #3b2063;
+    margin-left: 110px ;
+    margin-right: 110px;
+    margin-top: 70px;
+    gap: 5px;
+}
 
+.faq h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 15px;
+    font-family: var(--font-3);
+}
+
+.faq-d {
+    width: 100%;
+    height: 150px;
+    border: solid 5px #1b1c5a;
 }
