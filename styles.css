@@ -566,7 +566,7 @@ z-index: 2;  */
 
 .mail-2 h3 {
     font-family: var(--font-3);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: white;
 }
@@ -604,3 +604,95 @@ z-index: 2;  */
 body:has(.faq-d[open]) .mail-2 {
     margin-top: 300px;
 }
+
+
+footer {
+    width: 100%;
+    max-width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px ;
+    margin-top: 80px;
+}
+
+footer .titre {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    font-family: var(--font-3);
+}
+
+footer .num {
+    text-decoration: underline;
+}
+
+footer .num:hover {
+    cursor: pointer;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-top: 50px;
+
+  }
+
+footer li  a{
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-3);
+    text-decoration: underline;
+    color: rgba(255,255,255,0.7);
+    text-decoration-color: rgba(255,255,255,0.7);
+}
+  
+  
+  @media (min-width: 1024px) {
+    ul {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+ 
+  @media (max-width: 639px) {
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+ .select-2 {
+    margin-top: 70px;
+ }
+
+
+
+ .last p {
+    font-size: 0.8rem;
+    font-family: var(--font-3);
+    color: rgba(255,255,255,0.7);
+ }
+
+.netflix {
+    font-size: 1rem;
+    font-family: var(--font-3);
+    color: rgba(255, 255, 255, 0.806);
+    margin-top: 50px;
+}
+
+ p .blue {
+    color: rgb(77, 169, 255);
+    text-decoration: underline;
+ }
