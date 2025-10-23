@@ -151,6 +151,7 @@ header img {
     line-height: 1.5;
     padding: 1.5rem 1rem 1.5rem ; 
     width: 400px;
+    height: 4rem;
     filter: opacity(100%);
     color: inherit;
     background: transparent;
@@ -159,7 +160,9 @@ header img {
 }
 
 .button-1 {
-    font-size: 1.5rem;
+    height: 4rem;
+    width: 260px;
+    font-size: 1.8rem;
     padding: 0.75rem 1.5rem;
     border-radius: 0.25rem;
     background: rgb(229, 9, 20);
@@ -430,16 +433,16 @@ z-index: 2;  */
     height: 90vh;
     display: flex;
     flex-direction:column ;
-    background-color: #3b2063;
+
     margin-left: 110px ;
     margin-right: 110px;
     margin-top: 70px;
-    gap: 5px;
+    gap: 10px;
 }
 
 .faq h2 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
     margin-left: 15px;
     font-family: var(--font-3);
@@ -447,6 +450,157 @@ z-index: 2;  */
 
 .faq-d {
     width: 100%;
-    height: 150px;
-    border: solid 5px #1b1c5a;
+    height: auto;
+    background-color: rgb(45,45,45);
+    color: white;
+}
+
+
+
+.summary-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font-3);
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+}
+
+.faq-d p {
+    font-family: var(--font-3);
+    font-size: 1.4rem;
+    font-weight: 400;
+    
+}
+
+
+.summary-1:hover {
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+}
+
+
+
+.faq:has(.d-1[open]) .s-1 svg {
+    transform: rotate(45deg);
+}
+.faq:has(.d-1[open]) .d-1 p {
+    padding-left: 30px;
+}
+.faq:has(.d-1[open]) .s-1 {
+    border-bottom: solid 1px #000;
+}
+
+
+.faq:has(.d-2[open]) .s-2 svg {
+    transform: rotate(45deg);
+}
+.faq:has(.d-2[open]) .d-2 p {
+    padding-left: 30px;
+}
+.faq:has(.d-2[open]) .s-2 {
+    border-bottom: solid 1px #000;
+}
+
+
+.faq:has(.d-3[open]) .s-3 svg {
+    transform: rotate(45deg);
+}
+.faq:has(.d-3[open]) .d-3 p {
+    padding-left: 30px;
+}
+.faq:has(.d-3[open]) .s-3 {
+    border-bottom: solid 1px #000;
+}
+
+
+.faq:has(.d-4[open]) .s-4 svg {
+    transform: rotate(45deg);
+}
+.faq:has(.d-4[open]) .d-4 p {
+    padding-left: 30px;
+}
+.faq:has(.d-4[open]) .s-4 {
+    border-bottom: solid 1px #000;
+}
+
+
+.faq:has(.d-5[open]) .s-5 svg {
+    transform: rotate(45deg);
+}
+.faq:has(.d-5[open]) .d-5 p {
+    padding-left: 30px;
+}
+.faq:has(.d-5[open]) .s-5 {
+    border-bottom: solid 1px #000;
+}
+
+
+.faq:has(.d-6[open]) .s-6 svg {
+    transform: rotate(45deg);
+}
+.faq:has(.d-6[open]) .d-6 p {
+    padding-left: 30px;
+}
+.faq:has(.d-6[open]) .s-6 {
+    border-bottom: solid 1px #000;
+}
+
+
+
+.mail-2 {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.mail-2 h3 {
+    font-family: var(--font-3);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.email-button-2 {
+    border-radius: 0.25rem;  
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1.5rem 1rem 1.5rem ; 
+    width: 770px;
+    height: 4rem;
+    filter: opacity(100%);
+    color: inherit;
+    background: transparent;
+    border: solid 1px gray;
+    
+}
+
+.button-2 {
+    height: 4rem;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.button-1:hover {
+    cursor: pointer;
+    background: rgb(171, 7, 15);
+}
+
+body:has(.faq-d[open]) .mail-2 {
+    margin-top: 300px;
 }
