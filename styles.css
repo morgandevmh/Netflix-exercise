@@ -8,7 +8,7 @@
 
     --font-1:'Bebas Neue', sans-serif;
     --font-2:'Anton', sans-serif; 
-    --font-3:'netflix-sans';
+    --font-3:'netflix', sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -94,7 +94,7 @@ header img {
     background: rgb(229,9,20);
     color: rgb(255,255,255);
     text-decoration: none;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
 }
 
 .identifier:hover {
@@ -116,19 +116,19 @@ header img {
     font-size: 3.5rem;
     font-weight: 900;
     max-width: 700px;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
 }
 
 .text p {
     font-size: 1.25rem;
     font-weight: 500;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
 }
 
 .text h3 {
     font-size: 1rem;
     font-weight: 400;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
     line-height: 1.5;
     max-width: 500px;
 }
@@ -149,7 +149,7 @@ header img {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    padding: 1.5rem 1rem 0.5rem; 
+    padding: 1.5rem 1rem 1.5rem ; 
     width: 400px;
     filter: opacity(100%);
     color: inherit;
@@ -223,7 +223,7 @@ z-index: 2;  */
 }
 .container-1 {
     height: 80px;
-    width: 80%;
+    width: 88%;
     position: relative;
     display: flex;
     align-items: center;
@@ -236,8 +236,8 @@ z-index: 2;  */
     padding: 25px;
 }
 
-.container-1:hover, .wrapper:hover {
-    transform: scale(1.08);
+.wrapper:hover {
+    transform: scale(1.05);
 }
 .container-1:hover {
     background: linear-gradient(90deg, #432371 0%, #1c1b54 100%);
@@ -256,7 +256,7 @@ z-index: 2;  */
     top: 20px;
     font-size: 1.25rem;
     font-weight: 500;
-    font-family: var(--font-1);
+    font-family: var(--font-3);
 }
 
 .container-1 p {
@@ -264,7 +264,7 @@ z-index: 2;  */
     bottom: 25px;
     font-size: 1rem;
     font-weight: 400;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
 }
 .en-savoir-plus-button {
     height: 45px;
@@ -299,7 +299,7 @@ z-index: 2;  */
     color: white;
     position: relative;
     left: 130px;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
 } 
 
 .carrousel-card {
@@ -309,6 +309,7 @@ z-index: 2;  */
     flex-direction: row;
     padding-left: 130px;
     padding-right: 130px ;
+
 }
 .card {
     height: 280px;
@@ -360,7 +361,7 @@ z-index: 2;  */
     color: white;
     position: relative;
     left: 130px;
-    font-family: var(--color-2);
+    font-family: var(--font-3);
 }
 
 .container-card-2 {
@@ -371,6 +372,7 @@ z-index: 2;  */
     flex-wrap: wrap;
     padding-left: 130px;
     padding-right: 130px ;
+    gap: 13px;
 
 }
 
@@ -379,7 +381,6 @@ z-index: 2;  */
     height: 360px;
     width: 280px;
     flex-direction: column;
-    text-align: justify;
     color: white;
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
     border-radius: 20px;
@@ -389,14 +390,38 @@ z-index: 2;  */
 .card2 h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
 }
 
 .card2 p {
     color: rgba(255,255,255,0.7);
-    font-family: var(--font-2);
+    font-family: var(--font-3);
     font-size: 1rem;
     font-weight: 400;
+}
+
+.c2-1{
+    position: relative;
+    top:15%;
+    left: 190px;
+}
+
+.c2-2 {
+    position: relative;
+    top:5%;
+    left: 190px;
+}
+
+.c2-3 {
+    position: relative;
+    top:30%;
+    left: 190px;
+}
+
+.c2-4 {
+    position: relative;
+    top:12%;
+    left: 190px;
 }
 
 
