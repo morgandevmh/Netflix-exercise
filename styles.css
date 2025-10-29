@@ -289,11 +289,11 @@ z-index: 2;  */
 
 
 .tendances {
-    height: 350px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .tendances h2 {
@@ -354,7 +354,7 @@ z-index: 2;  */
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 80px;
 
 }
 
@@ -435,7 +435,7 @@ z-index: 2;  */
     flex-direction:column ;
     margin-left: 110px ;
     margin-right: 110px;
-    margin-top: 70px;
+    margin-top: 80px;
     gap: 10px;
 }
 
@@ -734,10 +734,7 @@ footer li  a{
         margin-top: 50px;
     }
     
-    .raison-abonnement h2 {
-        left: 40px;
-        font-size: 1.3rem;
-    }
+
     
     .container-card-2 {
         padding-left: 40px;
@@ -821,11 +818,7 @@ footer li  a{
         margin-top: 40px;
     }
     
-    .raison-abonnement h2 {
-        left: 20px;
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-    }
+
     
     .container-card-2 {
         padding-left: 20px;
@@ -909,6 +902,9 @@ footer li  a{
     height: 3.5rem;
 }
 
+.mail-2 h3 {
+    text-align: center;
+}
 
 .container-1 {
     flex-direction: column;
@@ -917,5 +913,50 @@ footer li  a{
     padding-bottom: 5px;
 }
 
+.tendances h2, .raison-abonnement h2  {
+    left: 0;
+    padding-left: 5%;
 
+}
+
+}
+
+
+/* 700px */
+
+@media screen and (max-width: 700px) {
+
+
+    .container-1 {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+    .text-2 h3,.text-2 p {
+        text-align: center;
+    }
+
+    .card {
+        height: 140px;
+        width: 90px;
+    }
+    
+    .card img {
+        height: 140px;
+        width: 90px;
+    }
+    
+    .carrousel-card span {
+        font-size: 3.5rem;
+}
+
+.tendances h2  {
+    left: 0;
+
+}
+h2 {
+    text-align: center;
+}
+    
 }
