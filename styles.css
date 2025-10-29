@@ -725,11 +725,45 @@ footer li  a{
         left: 70%;
     }
     
+
+    .top-header {
+        margin-left: 100px;
+        margin-right: 80px;
+        padding-right: 80px;
+        gap: 25px;
+    }
+    
+    .logo {
+        width: 140px;
+        height: 35px;
+    }
+
     
  }
 
 /* 1200px */
 @media screen and (max-width: 1280px) {
+
+    .top-header {
+        margin-left: 80px;
+        margin-right: 60px;
+        padding-right: 60px;
+        gap: 20px;
+    }
+    
+    .logo {
+        width: 130px;
+        height: 32px;
+    }
+    
+    .select-lang-1 {
+        width: 110px;
+        font-size: 0.95rem;
+        padding: 0.35rem 1.8rem 0.35rem 0.7rem;
+    }
+
+
+
     .raison-abonnement {
         margin-top: 50px;
     }
@@ -814,6 +848,34 @@ footer li  a{
 
 /* 970px */
 @media screen and (max-width: 970px) {
+
+
+    header {
+        gap: 20px;
+    }
+    
+    .top-header {
+        margin-left: 50px;
+        margin-right: 40px;
+        padding-right: 40px;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .logo {
+        width: 120px;
+        height: 30px;
+    }
+    
+    .select-lang-1 {
+        width: 100px;
+        font-size: 0.9rem;
+        padding: 0.3rem 1.5rem 0.3rem 0.6rem;
+    }
+
+
+
+
     .raison-abonnement {
         margin-top: 40px;
     }
@@ -925,6 +987,29 @@ footer li  a{
 /* 700px */
 
 @media screen and (max-width: 700px) {
+
+    header {
+        gap: 15px;
+    }
+    
+    .top-header {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-right: 20px;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 25px;
+    }
+    
+    .select-lang-1 {
+        width: 90px;
+        font-size: 0.85rem;
+        padding: 0.25rem 1.2rem 0.25rem 0.5rem;
+    }
 
 
     .container-1 {
