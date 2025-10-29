@@ -350,7 +350,7 @@ z-index: 2;  */
 
 
 .raison-abonnement {
-    height: 450px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -430,10 +430,9 @@ z-index: 2;  */
 
 
 .faq {
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction:column ;
-
     margin-left: 110px ;
     margin-right: 110px;
     margin-top: 70px;
@@ -475,7 +474,6 @@ z-index: 2;  */
     font-family: var(--font-3);
     font-size: 1.4rem;
     font-weight: 400;
-    
 }
 
 
@@ -556,12 +554,11 @@ z-index: 2;  */
 .mail-2 {
     height: auto;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 .mail-2 h3 {
@@ -596,7 +593,7 @@ z-index: 2;  */
     border: none;
 }
 
-.button-1:hover {
+.button-2:hover {
     cursor: pointer;
     background: rgb(171, 7, 15);
 }
@@ -696,3 +693,229 @@ footer li  a{
     color: rgb(77, 169, 255);
     text-decoration: underline;
  }
+
+
+
+
+ /* responsive */
+
+ /* 1400px */
+ @media  screen and (max-width: 1420px ) {
+    .card2 {
+        height: 330px;
+        width: 230px;
+        padding: 15px;
+    }
+
+    .c2-1 {
+        position: relative;
+        top:3%;
+        left: 70%;
+    }
+
+    .c2-3 {
+        position: relative;
+        top:10%;
+        left: 70%;
+    }
+
+    .c2-2, .c2-4 {
+        position: relative;
+        top: -8%;
+        left: 70%;
+    }
+    
+    
+ }
+
+/* 1200px */
+@media screen and (max-width: 1280px) {
+    .raison-abonnement {
+        margin-top: 50px;
+    }
+    
+    .raison-abonnement h2 {
+        left: 40px;
+        font-size: 1.3rem;
+    }
+    
+    .container-card-2 {
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .card2 {
+        width: 45%;
+        min-width: 240px;
+        height: 280px;
+    }
+    
+    .card2 h3 {
+        font-size: 1.3rem;
+    }
+    
+    .card2 p {
+        font-size: 0.95rem;
+    }
+
+    .c2-1, .c2-3 {
+        position: relative;
+        top:20%;
+        left: 80%;
+    }
+
+    .c2-2, .c2-4 {
+        position: relative;
+        top:10%;
+        left: 80%;
+    }
+
+
+    .carrousel-card {
+        padding-left: 100px;
+        padding-right: 100px ;
+    
+    }
+    .card {
+        height: 180px;
+        width: 140px;
+
+    }
+    
+    .card img {
+        height: 180px;
+        width: 140px;
+    }
+    
+    .carrousel-card span {
+        font-size: 5rem;
+
+  }
+
+
+
+
+  .mail-1 {
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.email-button {
+    width: 350px;
+    font-size: 0.95rem;
+}
+
+.button-1 {
+    width: 220px;
+    font-size: 1.6rem;
+    padding: 0.75rem 1.2rem;
+}
+
+}
+
+/* 970px */
+@media screen and (max-width: 970px) {
+    .raison-abonnement {
+        margin-top: 40px;
+    }
+    
+    .raison-abonnement h2 {
+        left: 20px;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .container-card-2 {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 15px;
+        flex-direction: column;
+    }
+    
+    .card2 {
+        width: 100%;
+        max-width: 90%;
+        height: 250px;
+    }
+    
+    .card2 h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card2 p {
+        font-size: 0.9rem;
+    }
+    
+    .logo-svg svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .c2-1, .c2-3{
+        position: relative;
+        top:20%;
+        left: 85%;
+    }
+
+    .c2-2, .c2-4 {
+        position: relative;
+        top:10%;
+        left: 85%;
+    }
+    
+   
+    
+ 
+    .carrousel-card {
+        padding-left: 50px;
+        padding-right: 50px ;
+    
+    }
+    .card {
+        height: 160px;
+        width: 110px;
+    }
+    
+    .card img {
+        height: 160px;
+        width: 110px;
+    }
+    
+    .carrousel-card span {
+        font-size: 5rem;
+}
+    
+
+
+
+.mail-1, .mail-2 {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.email-button, .email-button-2 {
+    width: 100%;
+    max-width: 500px;
+    font-size: 1rem;
+}
+
+.button-1, .button-2 {
+    width: 100%;
+    max-width: 500px;
+    font-size: 1.5rem;
+    height: 3.5rem;
+}
+
+
+.container-1 {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+
+}
