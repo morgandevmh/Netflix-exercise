@@ -1,13 +1,9 @@
 :root {
-    --color-1: ;
-    --color-2: ;
-    --color-3: ;
     --gradient-1: linear-gradient(91deg, #261733, #151a3f);
     --gradient-2: linear-gradient(91deg,#482566 0%, #161d52 99.51%);
-    --gradient-3: linear-gradient(149deg, #192247 0%, #210e17 96.86%); ;
-
+    --gradient-3: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
     --font-1:'Bebas Neue', sans-serif;
-    --font-2:'Anton', sans-serif; 
+    --font-2:'Anton', sans-serif;
     --font-3:'netflix', sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -21,22 +17,17 @@
 
 body {
     margin: 0;
-    max-width: 100%;
     background-color: #000;
-    display: block;
 }
 
 
 header {
-    background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.5%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.725) 53.5%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.5%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6) 97%);
+    background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.725) 53.5%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.5%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6) 97%);
     display: flex;
     flex-direction: column;
     gap: 30px;
     height: 100vh;
-    width: 100%;
 }
-
-
 
 
 header img {
@@ -45,16 +36,13 @@ header img {
     position: absolute;
     z-index: -1;
     object-fit: cover;
-
 }
-
 
 
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     gap: 30px;
     padding-right: 100px;
     margin-top: 20px;
@@ -71,7 +59,6 @@ header img {
 }
 
 .select-lang-1 {
-    height: auto;
     background-color: #00000004;
     border: solid 1px gray;
     color: white;
@@ -82,10 +69,8 @@ header img {
 }
 
 
-
 .identifier {
     height: 35px;
-    position: relative;
     font-size: 1rem;
     font-weight: 500;
     min-height: 2rem;
@@ -103,7 +88,6 @@ header img {
 }
 
 .text {
-    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,23 +103,23 @@ header img {
     font-family: var(--font-3);
 }
 
+.text p, .text h3 {
+    font-family: var(--font-3);
+}
+
 .text p {
     font-size: 1.25rem;
     font-weight: 500;
-    font-family: var(--font-3);
 }
 
 .text h3 {
     font-size: 1rem;
     font-weight: 400;
-    font-family: var(--font-3);
     line-height: 1.5;
     max-width: 500px;
 }
 
 .mail-1 {
-    height: auto;
-    width: 100%;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -144,19 +128,19 @@ header img {
     gap: 30px;
 }
 
-.email-button {
-    border-radius: 0.25rem;  
+.email-button, .email-button-2 {
+    border-radius: 0.25rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    padding: 1.5rem 1rem 1.5rem ; 
-    width: 400px;
-    height: 4rem;
-    filter: opacity(100%);
-    color: inherit;
     background: transparent;
     border: solid 1px gray;
-    
+}
+
+.email-button {
+    padding: 1.5rem 1rem 1.5rem;
+    width: 400px;
+    height: 4rem;
 }
 
 .button-1 {
@@ -170,39 +154,12 @@ header img {
     border: none;
 }
 
-.button-1:hover {
+.button-1:hover, .button-2:hover {
     cursor: pointer;
     background: rgb(171, 7, 15);
 }
 
-/*
-.separateur-container {
-    display: block;
-}
-.separateur::before {
-    content: ' ';
-    width: 100%;
-    height: 80px;
-    border: solid .25rem transparent;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    border-bottom: none;
-    position: relative;
-    margin-top: -.25rem;
-    border-radius: inherit; 
-    background: linear-gradient(to right,
-rgba(33, 13, 22, 1) 16%,
-rgba(184, 40, 105, 1),
-rgba(229, 9, 20, 1),
-rgba(184, 40, 105, 1),
-rgba(33, 13, 22, 1) 84%
-);
-z-index: 2;  */
-
-
-
 .en-savoir-plus {
-    height: 100px;
     width: 80%;
     position: relative;
     display: flex;
@@ -212,7 +169,6 @@ z-index: 2;  */
 }
 
 .wrapper {
-    height: 85px;
     width: 90%;
     display: flex;
     align-items: center;
@@ -221,9 +177,6 @@ z-index: 2;  */
     transition: transform 0.4s ease-in-out;
 }
 
-.logo-svg-popcorn {
-    height: auto;
-}
 .container-1 {
     height: 80px;
     width: 88%;
@@ -249,9 +202,11 @@ z-index: 2;  */
 .text-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
+}
 
+.container-1 h3, .container-1 p {
+    font-family: var(--font-3);
 }
 
 .container-1 h3 {
@@ -259,7 +214,6 @@ z-index: 2;  */
     top: 20px;
     font-size: 1.25rem;
     font-weight: 500;
-    font-family: var(--font-3);
 }
 
 .container-1 p {
@@ -267,7 +221,6 @@ z-index: 2;  */
     bottom: 25px;
     font-size: 1rem;
     font-weight: 400;
-    font-family: var(--font-3);
 }
 .en-savoir-plus-button {
     height: 45px;
@@ -283,14 +236,10 @@ z-index: 2;  */
 .en-savoir-plus-button:hover {
     cursor: pointer;
     background-color: rgba(177, 177, 177, 0.235);
-
 }
 
 
-
 .tendances {
-    height: auto;
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 80px;
@@ -309,10 +258,8 @@ z-index: 2;  */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
     padding-left: 130px;
     padding-right: 130px ;
-
 }
 .card {
     height: 280px;
@@ -326,7 +273,6 @@ z-index: 2;  */
     position: absolute;
     object-fit: cover;
     border-radius: 15px;
-  
 }
 
 .carrousel-card span {
@@ -347,15 +293,10 @@ z-index: 2;  */
 }
 
 
-
-
 .raison-abonnement {
-    height: auto;
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 80px;
-
 }
 
 .raison-abonnement h2 {
@@ -371,12 +312,10 @@ z-index: 2;  */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
     flex-wrap: wrap;
     padding-left: 130px;
     padding-right: 130px ;
     gap: 13px;
-
 }
 
 .card2 {
@@ -385,20 +324,22 @@ z-index: 2;  */
     width: 280px;
     flex-direction: column;
     color: white;
-    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    background: var(--gradient-3);
     border-radius: 20px;
     padding: 15px;
+}
+
+.card2 h3, .card2 p {
+    font-family: var(--font-3);
 }
 
 .card2 h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: var(--font-3);
 }
 
 .card2 p {
     color: rgba(255,255,255,0.7);
-    font-family: var(--font-3);
     font-size: 1rem;
     font-weight: 400;
 }
@@ -428,9 +369,7 @@ z-index: 2;  */
 }
 
 
-
 .faq {
-    height: auto;
     display: flex;
     flex-direction:column ;
     margin-left: 110px ;
@@ -448,12 +387,9 @@ z-index: 2;  */
 }
 
 .faq-d {
-    width: 100%;
-    height: auto;
     background-color: rgb(45,45,45);
     color: white;
 }
-
 
 
 .summary-1 {
@@ -461,7 +397,6 @@ z-index: 2;  */
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    width: 100%;
     font-size: 1.5rem;
     font-family: var(--font-3);
     font-weight: 400;
@@ -483,77 +418,35 @@ z-index: 2;  */
 }
 
 
-
-.faq:has(.d-1[open]) .s-1 svg {
-    transform: rotate(45deg);
-}
-.faq:has(.d-1[open]) .d-1 p {
-    padding-left: 30px;
-}
-.faq:has(.d-1[open]) .s-1 {
-    border-bottom: solid 1px #000;
-}
-
-
-.faq:has(.d-2[open]) .s-2 svg {
-    transform: rotate(45deg);
-}
-.faq:has(.d-2[open]) .d-2 p {
-    padding-left: 30px;
-}
-.faq:has(.d-2[open]) .s-2 {
-    border-bottom: solid 1px #000;
-}
-
-
-.faq:has(.d-3[open]) .s-3 svg {
-    transform: rotate(45deg);
-}
-.faq:has(.d-3[open]) .d-3 p {
-    padding-left: 30px;
-}
-.faq:has(.d-3[open]) .s-3 {
-    border-bottom: solid 1px #000;
-}
-
-
-.faq:has(.d-4[open]) .s-4 svg {
-    transform: rotate(45deg);
-}
-.faq:has(.d-4[open]) .d-4 p {
-    padding-left: 30px;
-}
-.faq:has(.d-4[open]) .s-4 {
-    border-bottom: solid 1px #000;
-}
-
-
-.faq:has(.d-5[open]) .s-5 svg {
-    transform: rotate(45deg);
-}
-.faq:has(.d-5[open]) .d-5 p {
-    padding-left: 30px;
-}
-.faq:has(.d-5[open]) .s-5 {
-    border-bottom: solid 1px #000;
-}
-
-
+.faq:has(.d-1[open]) .s-1 svg,
+.faq:has(.d-2[open]) .s-2 svg,
+.faq:has(.d-3[open]) .s-3 svg,
+.faq:has(.d-4[open]) .s-4 svg,
+.faq:has(.d-5[open]) .s-5 svg,
 .faq:has(.d-6[open]) .s-6 svg {
     transform: rotate(45deg);
 }
+
+.faq:has(.d-1[open]) .d-1 p,
+.faq:has(.d-2[open]) .d-2 p,
+.faq:has(.d-3[open]) .d-3 p,
+.faq:has(.d-4[open]) .d-4 p,
+.faq:has(.d-5[open]) .d-5 p,
 .faq:has(.d-6[open]) .d-6 p {
     padding-left: 30px;
 }
+
+.faq:has(.d-1[open]) .s-1,
+.faq:has(.d-2[open]) .s-2,
+.faq:has(.d-3[open]) .s-3,
+.faq:has(.d-4[open]) .s-4,
+.faq:has(.d-5[open]) .s-5,
 .faq:has(.d-6[open]) .s-6 {
     border-bottom: solid 1px #000;
 }
 
 
-
 .mail-2 {
-    height: auto;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -569,18 +462,8 @@ z-index: 2;  */
 }
 
 .email-button-2 {
-    border-radius: 0.25rem;  
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 1.5rem 1rem 1.5rem ; 
     width: 770px;
     height: 4rem;
-    filter: opacity(100%);
-    color: inherit;
-    background: transparent;
-    border: solid 1px gray;
-    
 }
 
 .button-2 {
@@ -593,11 +476,6 @@ z-index: 2;  */
     border: none;
 }
 
-.button-2:hover {
-    cursor: pointer;
-    background: rgb(171, 7, 15);
-}
-
 body:has(.faq-d[open]) .mail-2 {
     margin-top: 300px;
 }
@@ -605,7 +483,6 @@ body:has(.faq-d[open]) .mail-2 {
 
 footer {
     width: 100%;
-    max-width: 100vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -620,10 +497,6 @@ footer .titre {
     font-family: var(--font-3);
 }
 
-footer .num {
-    text-decoration: underline;
-}
-
 footer .num:hover {
     cursor: pointer;
 }
@@ -636,8 +509,7 @@ footer ul {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 16px;
     margin-top: 50px;
-
-  }
+}
 
 footer li  a{
     line-height: 1.5;
@@ -648,39 +520,36 @@ footer li  a{
     color: rgba(255,255,255,0.7);
     text-decoration-color: rgba(255,255,255,0.7);
 }
-  
-  
-  @media (min-width: 1024px) {
-    ul {
+
+
+@media (min-width: 1024px) {
+    footer ul {
       grid-template-columns: repeat(4, 1fr);
     }
-  }
-  
+}
 
-  @media (min-width: 640px) and (max-width: 1023px) {
-    ul {
+@media (min-width: 640px) and (max-width: 1023px) {
+    footer ul {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
-  
- 
-  @media (max-width: 639px) {
-    ul {
+}
+
+@media (max-width: 639px) {
+    footer ul {
       grid-template-columns: 1fr;
     }
-  }
-  
- .select-2 {
+}
+
+.select-2 {
     margin-top: 70px;
- }
+}
 
 
-
- .last p {
+.last p {
     font-size: 0.8rem;
     font-family: var(--font-3);
     color: rgba(255,255,255,0.7);
- }
+}
 
 .netflix {
     font-size: 1rem;
@@ -689,18 +558,15 @@ footer li  a{
     margin-top: 50px;
 }
 
- p .blue {
+p .blue {
     color: rgb(77, 169, 255);
     text-decoration: underline;
- }
+}
 
 
+/* responsive */
 
-
- /* responsive */
-
- /* 1400px */
- @media  screen and (max-width: 1420px ) {
+@media  screen and (max-width: 1420px ) {
     .card2 {
         height: 330px;
         width: 230px;
@@ -724,7 +590,7 @@ footer li  a{
         top: -8%;
         left: 70%;
     }
-    
+
 
     .top-header {
         margin-left: 100px;
@@ -732,61 +598,53 @@ footer li  a{
         padding-right: 80px;
         gap: 25px;
     }
-    
+
     .logo {
         width: 140px;
         height: 35px;
     }
+}
 
-    
- }
-
-/* 1200px */
 @media screen and (max-width: 1280px) {
-
     .top-header {
         margin-left: 80px;
         margin-right: 60px;
         padding-right: 60px;
         gap: 20px;
     }
-    
+
     .logo {
         width: 130px;
         height: 32px;
     }
-    
+
     .select-lang-1 {
         width: 110px;
         font-size: 0.95rem;
         padding: 0.35rem 1.8rem 0.35rem 0.7rem;
     }
 
-
-
     .raison-abonnement {
         margin-top: 50px;
     }
-    
 
-    
     .container-card-2 {
         padding-left: 40px;
         padding-right: 40px;
         gap: 15px;
         justify-content: center;
     }
-    
+
     .card2 {
         width: 45%;
         min-width: 240px;
         height: 280px;
     }
-    
+
     .card2 h3 {
         font-size: 1.3rem;
     }
-    
+
     .card2 p {
         font-size: 0.95rem;
     }
@@ -803,57 +661,46 @@ footer li  a{
         left: 80%;
     }
 
-
     .carrousel-card {
         padding-left: 100px;
         padding-right: 100px ;
-    
     }
     .card {
         height: 180px;
         width: 140px;
-
     }
-    
+
     .card img {
         height: 180px;
         width: 140px;
     }
-    
+
     .carrousel-card span {
         font-size: 5rem;
+    }
 
-  }
+    .mail-1 {
+        gap: 20px;
+        padding: 20px 40px;
+    }
 
+    .email-button {
+        width: 350px;
+        font-size: 0.95rem;
+    }
 
-
-
-  .mail-1 {
-    gap: 20px;
-    padding: 20px 40px;
+    .button-1 {
+        width: 220px;
+        font-size: 1.6rem;
+        padding: 0.75rem 1.2rem;
+    }
 }
 
-.email-button {
-    width: 350px;
-    font-size: 0.95rem;
-}
-
-.button-1 {
-    width: 220px;
-    font-size: 1.6rem;
-    padding: 0.75rem 1.2rem;
-}
-
-}
-
-/* 970px */
 @media screen and (max-width: 970px) {
-
-
     header {
         gap: 20px;
     }
-    
+
     .top-header {
         margin-left: 50px;
         margin-right: 40px;
@@ -861,54 +708,44 @@ footer li  a{
         gap: 15px;
         margin-top: 15px;
     }
-    
+
     .logo {
         width: 120px;
         height: 30px;
     }
-    
+
     .select-lang-1 {
         width: 100px;
         font-size: 0.9rem;
         padding: 0.3rem 1.5rem 0.3rem 0.6rem;
     }
 
-
-
-
     .raison-abonnement {
         margin-top: 40px;
     }
-    
 
-    
     .container-card-2 {
         padding-left: 20px;
         padding-right: 20px;
         gap: 15px;
         flex-direction: column;
     }
-    
+
     .card2 {
         width: 100%;
         max-width: 90%;
         height: 250px;
     }
-    
+
     .card2 h3 {
         font-size: 1.2rem;
     }
-    
+
     .card2 p {
         font-size: 0.9rem;
     }
-    
-    .logo-svg svg {
-        width: 60px;
-        height: 60px;
-    }
 
-    .c2-1, .c2-3{
+    .c2-1, .c2-3 {
         position: relative;
         top:20%;
         left: 85%;
@@ -919,79 +756,66 @@ footer li  a{
         top:10%;
         left: 85%;
     }
-    
-   
-    
- 
+
     .carrousel-card {
         padding-left: 50px;
         padding-right: 50px ;
-    
     }
     .card {
         height: 160px;
         width: 110px;
     }
-    
+
     .card img {
         height: 160px;
         width: 110px;
     }
-    
+
     .carrousel-card span {
         font-size: 5rem;
+    }
+
+    .mail-1, .mail-2 {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .email-button, .email-button-2 {
+        width: 100%;
+        max-width: 500px;
+        font-size: 1rem;
+    }
+
+    .button-1, .button-2 {
+        width: 100%;
+        max-width: 500px;
+        font-size: 1.5rem;
+        height: 3.5rem;
+    }
+
+    .mail-2 h3 {
+        text-align: center;
+    }
+
+    .container-1 {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+
+    .tendances h2, .raison-abonnement h2  {
+        left: 0;
+        padding-left: 5%;
+    }
 }
-    
-
-
-
-.mail-1, .mail-2 {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-}
-
-.email-button, .email-button-2 {
-    width: 100%;
-    max-width: 500px;
-    font-size: 1rem;
-}
-
-.button-1, .button-2 {
-    width: 100%;
-    max-width: 500px;
-    font-size: 1.5rem;
-    height: 3.5rem;
-}
-
-.mail-2 h3 {
-    text-align: center;
-}
-
-.container-1 {
-    flex-direction: column;
-    height: auto;
-    padding: 0;
-    padding-bottom: 5px;
-}
-
-.tendances h2, .raison-abonnement h2  {
-    left: 0;
-    padding-left: 5%;
-
-}
-
-}
-
-
-/* 700px */
 
 @media screen and (max-width: 700px) {
-
     header {
         gap: 15px;
     }
-    
+
     .top-header {
         margin-left: 30px;
         margin-right: 30px;
@@ -999,18 +823,17 @@ footer li  a{
         gap: 10px;
         margin-top: 10px;
     }
-    
+
     .logo {
         width: 100px;
         height: 25px;
     }
-    
+
     .select-lang-1 {
         width: 90px;
         font-size: 0.85rem;
         padding: 0.25rem 1.2rem 0.25rem 0.5rem;
     }
-
 
     .container-1 {
         flex-direction: column;
@@ -1026,22 +849,20 @@ footer li  a{
         height: 140px;
         width: 90px;
     }
-    
+
     .card img {
         height: 140px;
         width: 90px;
     }
-    
+
     .carrousel-card span {
         font-size: 3.5rem;
-}
+    }
 
-.tendances h2  {
-    left: 0;
-
-}
-h2 {
-    text-align: center;
-}
-    
+    .tendances h2 {
+        left: 0;
+    }
+    h2 {
+        text-align: center;
+    }
 }
