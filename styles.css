@@ -1,11 +1,18 @@
 :root {
-    --gradient-1: linear-gradient(91deg, #261733, #151a3f);
-    --gradient-2: linear-gradient(91deg,#482566 0%, #161d52 99.51%);
-    --gradient-3: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    --color-1: white; 
+    --color-2: rgba(255,255,255,0.7);
+    --red-1: rgb(229,9,20);
+    --red-2: rgb(171, 7, 15);
+
+    --gradient-1: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    --netflix-gradient: linear-gradient(90deg, #3b2063 0%, #1b1c5a 100%);
+    --netflix-gradeint-hover: linear-gradient(90deg, #432371 0%, #1c1b54 100%);
+
     --font-1:'Bebas Neue', sans-serif;
     --font-2:'Anton', sans-serif;
     --font-3:'netflix', sans-serif;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.cdnfonts.com/css/netflix-sans');
@@ -20,7 +27,7 @@ body {
     background-color: #000;
 }
 
-
+/* header */
 header {
     background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.725) 53.5%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.5%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6) 97%);
     display: flex;
@@ -51,7 +58,7 @@ header img {
 }
 
 .logo {
-    fill:rgb(229,9,20);
+    fill:var(--red-1);
     width: 160px;
     height: 40px;
     z-index: 10;
@@ -61,7 +68,7 @@ header img {
 .select-lang-1 {
     background-color: #00000004;
     border: solid 1px gray;
-    color: white;
+    color: var(--color-1);
     appearance: none;
     width: 120px;
     font-size: 1rem;
@@ -76,15 +83,15 @@ header img {
     min-height: 2rem;
     padding: 0.25rem 1rem;
     border-radius: 0.25rem;
-    background: rgb(229,9,20);
-    color: rgb(255,255,255);
+    background: var(--red-1);
+    color: var(--color-1);
     text-decoration: none;
     font-family: var(--font-3);
 }
 
 .identifier:hover {
     cursor: pointer;
-    background: rgb(171, 7, 15);
+    background: var(--red-2);
 }
 
 .text {
@@ -92,7 +99,7 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--color-1);
     text-align: center;
 }
 
@@ -149,16 +156,17 @@ header img {
     font-size: 1.8rem;
     padding: 0.75rem 1.5rem;
     border-radius: 0.25rem;
-    background: rgb(229, 9, 20);
-    color: rgb(255, 255, 255);
+    background: var(--red-1);
+    color: var(--color-1);
     border: none;
 }
 
 .button-1:hover, .button-2:hover {
     cursor: pointer;
-    background: rgb(171, 7, 15);
+    background: var(--red-2);
 }
 
+/* en savoir plus */
 .en-savoir-plus {
     width: 80%;
     position: relative;
@@ -185,9 +193,9 @@ header img {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    background: linear-gradient(90deg, #3b2063 0%, #1b1c5a 100%);
+    background: var(--netflix-gradient);
     transition: transform 0.4s ease-in-out;
-    color: white;
+    color: var(--color-1);
     border-radius: 20px;
     padding: 25px;
 }
@@ -195,8 +203,9 @@ header img {
 .wrapper:hover {
     transform: scale(1.05);
 }
+
 .container-1:hover {
-    background: linear-gradient(90deg, #432371 0%, #1c1b54 100%);
+    background: var(--netflix-gradeint-hover);
 }
 
 .text-2 {
@@ -222,12 +231,13 @@ header img {
     font-size: 1rem;
     font-weight: 400;
 }
+
 .en-savoir-plus-button {
     height: 45px;
     width: 160px;
     background-color: rgba(177, 177, 177, 0.361);
     border-radius: 5px;
-    color: white;
+    color: var(--color-1);
     font-size: 1rem;
     font-weight: 800;
     border: none;
@@ -239,6 +249,7 @@ header img {
 }
 
 
+/* tendances */
 .tendances {
     display: flex;
     flex-direction: column;
@@ -248,7 +259,7 @@ header img {
 .tendances h2 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: white;
+    color: var(--color-1);
     position: relative;
     left: 130px;
     font-family: var(--font-3);
@@ -282,9 +293,9 @@ header img {
     position: relative;
     top: 60%;
     color: rgb(65,65,65);
-   -webkit-text-stroke: 0.15rem rgb(255,255,255);
+   -webkit-text-stroke: 0.15rem var(--color-1); /* contour du  text (safari,chrome) */
    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
-   -webkit-text-fill-color: rgb(0,0,0);
+   -webkit-text-fill-color: rgb(0,0,0); /* couleur interieru du text (safari,chrome)*/
 }
 
 .card:hover {
@@ -292,7 +303,7 @@ header img {
     transform: scale(1.07);
 }
 
-
+/* raison abonnement */
 .raison-abonnement {
     display: flex;
     flex-direction: column;
@@ -302,7 +313,7 @@ header img {
 .raison-abonnement h2 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: white;
+    color: var(--color-1);
     position: relative;
     left: 130px;
     font-family: var(--font-3);
@@ -323,8 +334,8 @@ header img {
     height: 360px;
     width: 280px;
     flex-direction: column;
-    color: white;
-    background: var(--gradient-3);
+    color: var(--color-1);
+    background: var(--gradient-1);
     border-radius: 20px;
     padding: 15px;
 }
@@ -339,7 +350,7 @@ header img {
 }
 
 .card2 p {
-    color: rgba(255,255,255,0.7);
+    color: var(--color-2);
     font-size: 1rem;
     font-weight: 400;
 }
@@ -369,6 +380,7 @@ header img {
 }
 
 
+/* faq */
 .faq {
     display: flex;
     flex-direction:column ;
@@ -381,14 +393,14 @@ header img {
 .faq h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: white;
+    color: var(--color-1);
     margin-left: 15px;
     font-family: var(--font-3);
 }
 
 .faq-d {
     background-color: rgb(45,45,45);
-    color: white;
+    color: var(--color-1);
 }
 
 
@@ -458,7 +470,7 @@ header img {
     font-family: var(--font-3);
     font-size: 1.1rem;
     font-weight: 400;
-    color: white;
+    color: var(--color-1);
 }
 
 .email-button-2 {
@@ -471,8 +483,8 @@ header img {
     font-size: 1.5rem;
     padding: 0.75rem 1.5rem;
     border-radius: 0.25rem;
-    background: rgb(229, 9, 20);
-    color: rgb(255, 255, 255);
+    background: var(--red-1);
+    color: var(--color-1);
     border: none;
 }
 
@@ -481,6 +493,8 @@ body:has(.faq-d[open]) .mail-2 {
 }
 
 
+
+/* footer */
 footer {
     width: 100%;
     height: 80vh;
@@ -493,7 +507,7 @@ footer {
 footer .titre {
     font-size: 1.1rem;
     font-weight: 400;
-    color: rgba(255,255,255,0.7);
+    color: var(--color-2);
     font-family: var(--font-3);
 }
 
@@ -517,28 +531,10 @@ footer li  a{
     font-weight: 400;
     font-family: var(--font-3);
     text-decoration: underline;
-    color: rgba(255,255,255,0.7);
-    text-decoration-color: rgba(255,255,255,0.7);
+    color: var(--color-2);
+    text-decoration-color: var(--color-2);
 }
 
-
-@media (min-width: 1024px) {
-    footer ul {
-      grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (min-width: 640px) and (max-width: 1023px) {
-    footer ul {
-      grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 639px) {
-    footer ul {
-      grid-template-columns: 1fr;
-    }
-}
 
 .select-2 {
     margin-top: 70px;
@@ -548,7 +544,7 @@ footer li  a{
 .last p {
     font-size: 0.8rem;
     font-family: var(--font-3);
-    color: rgba(255,255,255,0.7);
+    color: var(--color-2);
 }
 
 .netflix {
@@ -558,14 +554,13 @@ footer li  a{
     margin-top: 50px;
 }
 
-p .blue {
+p .blue a {
     color: rgb(77, 169, 255);
     text-decoration: underline;
 }
 
 
 /* responsive */
-
 @media  screen and (max-width: 1420px ) {
     .card2 {
         height: 330px;
@@ -697,6 +692,8 @@ p .blue {
 }
 
 @media screen and (max-width: 970px) {
+
+
     header {
         gap: 20px;
     }
